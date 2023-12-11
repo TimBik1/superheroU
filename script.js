@@ -5,7 +5,7 @@ document.getElementById('superhero-form').addEventListener('submit', async funct
     console.log(name)
     if (name) {
         try {
-            const response = await fetch('/generate-superhero', {
+            const response = await fetch('https://your-backend-service.com/generate-superhero', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
